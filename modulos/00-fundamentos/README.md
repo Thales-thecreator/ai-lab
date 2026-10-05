@@ -43,7 +43,22 @@ Se um programa "não é encontrado" (`command not found` / `não é reconhecido 
 
 ## Parte B — Pegar o lab e instalar o uv
 
-Coloque a pasta `ai-lab` (que você recebeu em .zip ou via git) na sua pasta pessoal: `~/ai-lab` no Mac, `C:\Users\<você>\ai-lab` no Windows.
+O lab precisa ficar na sua pasta pessoal: `~/ai-lab` no Mac, `C:\Users\<você>\ai-lab` no Windows. Duas formas de pegar:
+
+- **Sem git (mais fácil):** em <https://github.com/Thales-thecreator/ai-lab>, clique em **Code → Download ZIP**, descompacte e renomeie a pasta `ai-lab-main` para `ai-lab`, movendo-a para a sua pasta pessoal.
+- **Com git** (recebe atualizações do guia com `git pull`):
+
+**🍎 macOS / Linux**
+```bash
+cd ~
+git clone https://github.com/Thales-thecreator/ai-lab.git
+```
+
+**🪟 Windows** (precisa do Git: <https://git-scm.com/download/win>)
+```powershell
+cd $HOME
+git clone https://github.com/Thales-thecreator/ai-lab.git
+```
 
 Agora instale o **uv**, o gerenciador de Python do lab:
 

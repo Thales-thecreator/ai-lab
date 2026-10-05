@@ -1,6 +1,8 @@
 # 🧪 AI Lab — aprenda IA local na prática
 
 Lab para entender como IA local funciona: **usar**, **integrar** e **ver por dentro**.
+
+**Comece pelo [Módulo 0](modulos/00-fundamentos/README.md)** — ele explica como baixar o lab, instalar tudo e rodar o primeiro modelo.
 Funciona em **macOS** e **Windows** (e Linux, com os comandos de macOS).
 
 ## Que computador eu preciso?
