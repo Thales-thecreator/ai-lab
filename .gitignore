@@ -1,0 +1,23 @@
+# Ambiente Python (recriado com `uv sync`)
+.venv/
+__pycache__/
+
+# Ferramentas e modelos baixados (instalados seguindo os módulos)
+ferramentas/*
+!ferramentas/.gitkeep
+modelos/*
+!modelos/.gitkeep
+
+# Dados gerados pelos exercícios
+modulos/04-rag/.cache/
+modulos/04-rag/dados/publicos/*
+!modulos/04-rag/dados/publicos/.gitkeep
+modulos/07-mini-gpt/dados/
+*.pt
+
+# Diário pessoal (cada pessoa cria o seu a partir de NOTAS.modelo.md)
+NOTAS.md
+
+# Sistema
+.DS_Store
+Thumbs.db

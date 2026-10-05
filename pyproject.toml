@@ -1,0 +1,17 @@
+[project]
+name = "ai-lab"
+version = "0.1.0"
+description = "Lab pessoal para aprender IA local"
+# Python 3.12: o PyTorch 2.2 (último com suporte a Mac Intel) não roda no 3.13+
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "ollama>=0.4",          # cliente Python da API do Ollama (módulos 2–5)
+    "numpy>=1.26",          # contas com vetores
+    "sounddevice>=0.4",     # módulo 8 (gravar áudio do microfone)
+    "pypdf>=6.19.0",        # módulo 4 (ler PDFs)
+    "python-docx>=1.2.0",   # módulo 4 (ler .docx)
+    # módulo 7 (mini-GPT). Mac Intel só tem até o torch 2.2, que exige numpy < 2.
+    "torch==2.2.2 ; sys_platform == 'darwin' and platform_machine == 'x86_64'",
+    "numpy<2 ; sys_platform == 'darwin' and platform_machine == 'x86_64'",
+    "torch>=2.5 ; sys_platform != 'darwin' or platform_machine != 'x86_64'",
+]
